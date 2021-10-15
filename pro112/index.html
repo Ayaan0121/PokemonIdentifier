@@ -1,0 +1,66 @@
+<html>
+
+<head>
+  <title>Pokemon Indentifier</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="shortcut icon" type="image/png" href="Untitled.png">
+</head>
+
+<body onmousewheel="change()">
+  <div class="container">
+
+    <center>
+
+      <h3 class="btn heading" onclick="tip()" id="headingas">Pokemon identifier
+        <br>
+      </h3>
+     
+      <p id="note" style="visibility: hidden;">This is an app which can indentify images of pokemon Pikachu ,Charizard , Greninja , Torterra garden , Gengar , Dragonite and Lucario </p>
+      <br><br>
+    
+      <br><br><br><br>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label  class = "ok" id="cap">Webcam View - </label>
+        <div id="camera"></div>
+        <br>
+        <br>
+        <button onclick="take_snapshot()" id="bucap"  class="btn btn-warning ol">Capture Image</button>
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12"> 
+        <br>
+        <br>
+        <span>
+          <h1 id="result_emotion_name" class="ok" >Pokemon</h1>
+         
+          </span>
+
+<br>
+
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label id="snap" class="ok"> Snapshot - </label>
+<div id="result"></div>
+        <br><br>
+        <button onclick="check()" id="buch" class="btn btn-success ol">Check Pokmon</button>
+      </div>
+
+    </center>
+
+  </div>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
